@@ -1,0 +1,400 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1d3557;
+    color: #fff;
+    padding: 20px 50px;
+    transition: background 0.3s;
+}
+
+nav:hover {
+    background: #457b9d;
+}
+
+nav .logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav .logo span:hover {
+    color: #fca311;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fca311;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+}
+
+/* Section Hover Effect */
+section {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(to right, #1d3557, #457b9d);
+    color: #fff;
+    padding: 100px 50px;
+    text-align: center;
+    transition: background 0.5s;
+}
+
+#home:hover {
+    background: linear-gradient(to right, #1d3557, #fca311);
+}
+
+.profile-image-container {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.profile-image-container:hover {
+    transform: scale(1.1);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.profile-image:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+h1 span {
+    color: #fca311;
+    transition: color 0.3s;
+}
+
+h1 span:hover {
+    color: #e63946;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+/* Social Links */
+.social-links a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fca311;
+    transform: translateY(-5px) scale(1.2);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #fca311;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #e63946;
+    transform: translateY(-5px);
+}
+
+/* About Section */
+#about {
+    background: #fff;
+    color: #333;
+    padding: 80px 50px;
+}
+
+.about-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.education, .skills-container {
+    width: 48%;
+}
+
+.education-item, .skills-container {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-item:hover, .skills-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+    color: #1d3557;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+ul li:hover {
+    color: #457b9d;
+}
+
+/* Projects Section */
+#projects {
+    background: #f4f4f4;
+    color: #333;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #fff;
+    width: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-header i {
+    font-size: 3rem;
+    color: #457b9d;
+}
+
+.project-header h3 {
+    margin: 10px 0;
+}
+
+.project-tags span {
+    background: #fca311;
+    color: #fff;
+    padding: 5px 15px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.project-tags span:hover {
+    background: #e63946;
+}
+
+.project-link {
+    display: inline-block;
+    color: #1d3557;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.project-link:hover {
+    color: #fca311;
+    transform: translateX(5px);
+}
+
+/* Contact Section - Get in Touch */
+#contact {
+    background: linear-gradient(to right, #1d3557, #457b9d);
+    color: #fff;
+    padding: 100px 50px;
+    text-align: center;
+    transition: background 0.5s;
+}
+
+#contact:hover {
+    background: linear-gradient(to right, #457b9d, #fca311);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-info:hover, .contact-form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-method i {
+    font-size: 2rem;
+    margin-right: 20px;
+    color: #fca311;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    box-shadow: 0 0 10px #fca311;
+}
+
+/* Footer */
+footer {
+    background: #1d3557;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fca311;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e63946;
+}
+
+
+/* ✅ Responsive Media Queries */
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        padding: 60px 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+}
